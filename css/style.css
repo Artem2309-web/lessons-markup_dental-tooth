@@ -8,10 +8,16 @@ html {
   box-sizing: inherit;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Source Sans 3';
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.2;
+  color: #302d2d;
 }
 
 a {
@@ -83,5 +89,41 @@ ul {
 }
 .header-top-social a img {
   max-width: 22px;
+}
+.header-bottom {
+  padding: 20px 0;
+}
+.header-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo img {
+  max-width: 172px;
+}
+.menu-nav ul {
+  display: flex;
+  align-content: center;
+}
+.menu-nav ul li:nth-last-child(n+2) {
+  margin-right: 40px;
+}
+.menu-nav ul li a {
+  font-size: 18px;
+  transition: color .35s ease;
+}
+.menu-nav ul li a:hover {
+  color: #2378C9;
+}
+.header-bottom-btn {
+  padding: 17px 29px;
+  border-radius: 26px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f86d6d;
+  transition: background-color .35s ease;
+}
+.header-bottom-btn:hover {
+  background-color: #e25e5e;
 }
 /* Header end */
