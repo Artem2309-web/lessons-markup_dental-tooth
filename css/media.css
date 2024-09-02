@@ -101,11 +101,29 @@
   .features-item:nth-last-child(n + 2) {
     margin-bottom: 40px;
   }
+
+  /* specialists 992 */
+  .specialists-row {
+    flex-wrap: wrap;
+    column-gap: 0;
+    justify-content: space-between;
+  }
+  .specialists-item {
+    width: 48.5%;
+    margin-bottom: 18px;
+  }
 }
 
 /* max-width: 575px */
 @media screen and (max-width: 575px) {
-
+  /* def */
+  .def-title-wrapper {
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
+  .def-descr {
+    font-size: 14px;
+  }
   .def-title {
     font-size: 30px;
     line-height: 38px;
@@ -179,5 +197,22 @@
   }
   .features-descr {
     font-size: 16px;
+  }
+
+  /* specialists 575 */
+  .s-specialists {
+    padding: 45px 0;
+  }
+  .specialists-item {
+    border-radius: 11px;
+  }
+  .specialists-footer {
+    padding: 15px;
+  }
+  .specialists-name {
+    font-size: 16px;
+  }
+  .specialists-profi {
+    font-size: 12px;
   }
 }

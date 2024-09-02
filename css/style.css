@@ -58,8 +58,6 @@
 .header-top-social a img {
   max-width: 22px;
 }
-
-/* .header-bottom  */
 .header-bottom {
   padding: 20px 0;
   box-shadow: 1px 2px 2px -1px rgba(48, 44, 44, 0.18);
@@ -84,88 +82,8 @@
 .header-bottom-btn:hover {
   background-color: #e25e5e;
 }
-
-/* menu-nav */
-.menu-nav ul {
-  display: flex;
-  align-content: center;
-}
-.menu-nav ul li:nth-last-child(n+2) {
-  margin-right: 40px;
-}
-.menu-nav ul li a {
-  font-size: 18px;
-  transition: color .35s ease;
-}
-.menu-nav ul li a:hover {
-  color: #2378C9;
-}
-
-/* hamburger */
-.hamburger {
-  margin-left: auto;
-  cursor: pointer;
-}
-.hamburger img {
-  width: 30px;
-}
-
-/* mobile-menu */
-.mobile-menu {
-  padding: 20px;
-  width: 100%;
-  background-color: #0E6EAA;
-  box-shadow: -2px 4px 4px 3px rgba(49, 46, 46, 0.09);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-120%);
-  transition: transform .5s ease;
-  z-index: 12;
-}
-.mobile-menu.is-active {
-  transform: none;
-}
-.mobile-menu-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  position: relative;
-}
-.mobile-menu-header:after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: calc(100% + 40px);
-  background-color: rgba(217, 214, 214, 0.56);
-  position: absolute;
-  left: -20px;
-  bottom: 0;
-}
-.mobile-menu-title {
-  font-size: 22px;
-  color: #fff;
-}
-.mobile-menu-body {
-  text-align: center;
-  color: #fff;
-}
-.mobile-menu-body .header-top-phone,
-.mobile-menu-body .header-top-email,
-.mobile-menu-body .header-top-social {
-  justify-content: center;
-  margin-right: 0;
-  margin-bottom: 30px;
-}
-.mobile-menu-nav {
-  margin-top: 50px;
-}
-.mobile-menu-nav li {
-  margin-bottom: 30px;
-}
 /* Header end */
+
 
 /* Banner START */
 .s-banner {
@@ -248,6 +166,7 @@
 }
 /* Banner END */
 
+
 /* About START */
 .s-about {
   padding: 110px 0;
@@ -295,7 +214,8 @@
 }
 /* About END */
 
-/* features START */
+
+/* Features START */
 .s-features {
   padding: 94px 0;
   background-color: #dfeefc;
@@ -328,4 +248,37 @@
   line-height: 160%;
   color: #56565e;
 }
-/* features END */
+/* Features END */
+
+
+/* Specialists START */
+.s-specialists {
+  padding: 90px 0;
+}
+.specialists-row {
+  display: flex;
+  column-gap: 20px;
+}
+.specialists-item {
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: 0 0 8px -1px rgba(29, 28, 28, 0.28);
+  overflow: hidden;
+  background-color: #2378C9;
+}
+.specialists-img img {
+  width: 100%;
+}
+.specialists-footer {
+  padding: 22px 24px;
+  color: #fff;
+}
+.specialists-name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.specialists-profi {
+  font-size: 14px;
+}
+/* Specialists END */
