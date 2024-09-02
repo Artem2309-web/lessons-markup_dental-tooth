@@ -282,3 +282,59 @@
   font-size: 14px;
 }
 /* Specialists END */
+
+/* Price START */
+.s-price {
+  padding: 90px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(222deg, #dfeefc 0%, rgba(167, 210, 251, 0.92) 100%);
+  position: relative;
+}
+.s-price::after {
+  content: '';
+  background-image: url('./../images/price-img.png');
+  background-size: 100% 100%;
+  width: 790px;
+  height: 831px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.price-wrap {
+  max-width: 712px;
+  padding: 50px 60px;
+  border-radius: 20px;
+  color: #fff;
+  background: #5eb8f0;
+  position: relative;
+  z-index: 1;
+}
+.price-wrap .def-title-wrapper {
+  max-width: 100%;
+  margin-bottom: 70px;
+}
+.price-wrap .def-title {
+  margin-bottom: 0;
+}
+.price-wrap .def-title,
+.price-wrap .def-descr {
+  color: #fff;
+}
+.price-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #fff;
+  font-weight: 300;
+  font: 18px;
+}
+.price-list li:nth-last-child(n + 2) {
+  margin-bottom: 28px;
+}
+.price-list li span + span {
+  font-weight: 700;
+}
+/* Price END */

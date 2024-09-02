@@ -201,7 +201,7 @@
 
   /* specialists 575 */
   .s-specialists {
-    padding: 45px 0;
+    padding: 45px 0 30px;
   }
   .specialists-item {
     border-radius: 11px;
@@ -214,5 +214,34 @@
   }
   .specialists-profi {
     font-size: 12px;
+  }
+
+  /* price */
+  .s-price {
+    padding: 45px 0;
+  }
+  .s-price::after {
+    display: none;
+  }
+  .price-wrap {
+    padding: 25px 30px;
+    border-radius: 10px;
+  }
+  .price-wrap .def-title-wrapper {
+    margin-bottom: 30px;
+  }
+  .price-wrap .def-title {
+    font-size: 23px;
+  }
+  .price-wrap .def-descr {
+    font-size: 12px;
+  }
+  .price-list li {
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 2px;
+  }
+  .price-list li:nth-last-child(n + 2) {
+    margin-bottom: 17px;
   }
 }
