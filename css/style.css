@@ -1,40 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-html, body {
-  overflow-x: hidden;
-}
-
-body {
-  font-family: 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #302d2d;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  max-width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 /* Header start */
 .header-top {
   padding: 14px 0;
@@ -156,8 +119,9 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-200%);
+  transform: translateX(-120%);
   transition: transform .5s ease;
+  z-index: 12;
 }
 .mobile-menu.is-active {
   transform: none;
@@ -283,3 +247,85 @@ ul {
   transform: translate(-50%, -50%);
 }
 /* Banner END */
+
+/* About START */
+.s-about {
+  padding: 110px 0;
+}
+.s-about .container {
+  max-width: 1260px;
+}
+.about-row {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.about-left img {
+  max-width: 488px;
+}
+.about-right {
+  max-width: 680px;
+}
+.about-descr {
+  font-size: 18px;
+  line-height: 175%;
+  color: #6b6868;
+  margin-bottom: 22px;
+}
+.about-list-title {
+  font-size: 18px;
+  line-height: 175%;
+  margin-bottom: 18px;
+}
+.about-list-wrap ul {
+  column-count: 2;
+}
+.about-list-wrap ul li {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.about-list-wrap ul li::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #2378c9;
+  margin-right: 22px;
+}
+/* About END */
+
+/* features START */
+.s-features {
+  padding: 94px 0;
+  background-color: #dfeefc;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 70px;
+}
+.features-item {
+  text-align: center;
+  width: 33.3%;
+  margin: 0 auto;
+}
+.features-icon {
+  margin-bottom: 25px;
+}
+.features-icon img {
+  max-width: 99px;
+}
+.features-title {
+  max-width: 300px;
+  margin: 0 auto 15px;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #000;
+}
+.features-descr {
+  font-size: 18px;
+  line-height: 160%;
+  color: #56565e;
+}
+/* features END */

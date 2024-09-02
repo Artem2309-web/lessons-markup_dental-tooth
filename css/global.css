@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Source Sans 3';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #302d2d;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* title */
+.def-title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 65px;
+  color: #302d2d;
+  margin-bottom: 30px;
+}
+.def-title .title-bold {
+  font-weight: 700;
+  color: #2378c9;
+}

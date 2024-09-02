@@ -9,6 +9,11 @@
   .menu-nav ul li:nth-last-child(n+2) {
     margin-right: 25px;
   }
+
+  /* about */
+  .about-row {
+    column-gap: 30px;
+  }
 }
 
 /* max-width: 992px */
@@ -16,6 +21,11 @@
   .header-top-rigth,
   .menu-nav {
     display: none;
+  }
+
+  .def-title {
+    font-size: 40px;
+    line-height: 50px;
   }
 
   /* banner */
@@ -56,10 +66,52 @@
   .banner-circle {
     width: 50px;
   }
+
+  /* about */
+  .s-about {
+    padding: 50px 0;
+  }
+  .about-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about-left img {
+    max-width: none;
+    width: 100%;
+  }
+  .about-descr {
+    font-size: 16px;
+  }
+  .about-list-wrap ul li {
+    font-size: 16px;
+  }
+
+  /* features */
+  .features-list {
+    flex-wrap: wrap;
+    column-gap: 0;
+  }
+  .features-item {
+    width: 45%;
+  }
+  .features-item:nth-last-child(n + 2) {
+    margin-bottom: 40px;
+  }
 }
 
 /* max-width: 575px */
 @media screen and (max-width: 575px) {
+
+  .def-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  /* header */
   .header-top-location {
     margin-right: 15px;
     font-size: 12px;
@@ -72,5 +124,60 @@
   }
   .header-bottom-btn {
     padding: 10px 15px;
+  }
+
+   /* about */
+   .s-about {
+    padding: 50px 0;
+  }
+  .about-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about-left img {
+    max-width: none;
+    width: 100%;
+  }
+  .about-descr {
+    font-size: 14px;
+  }
+  .about-list-title {
+    font-size: 16px;
+  }
+  .about-list-wrap ul li {
+    font-size: 14px;
+  }
+  .about-list-wrap ul li::before {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+  /* features */
+  .s-features {
+    padding: 55px 0;
+  }
+  .features-list {
+    flex-direction: column;
+  }
+  .features-item {
+    max-width: 300px;
+    width: 100%;
+  }
+  .features-icon {
+    margin-bottom: 22px;
+  }
+  .features-icon img {
+    max-width: 85px; 
+  }
+  .features-title {
+    font-size: 20px;
+  }
+  .features-descr {
+    font-size: 16px;
   }
 }
